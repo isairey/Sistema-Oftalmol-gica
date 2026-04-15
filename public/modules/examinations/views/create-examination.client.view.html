@@ -1,0 +1,18 @@
+<section data-ng-controller="ExaminationsController" data-ng-init="initCreate()">
+    <div class="col-md-12 content-div">
+        <form  name="forms.examinationForm"
+              sf-schema="schema"
+              sf-form="form"
+              sf-model="examination">
+        </form>
+        <div class="row">
+            <div pw-canvas
+                    data-get-image-data-url="getImageDataUrl"
+                    options="canvasOptions"
+                    version="canvasVersion"
+                    data-undo-enabled="true"></div>
+            <button ng-click="canvasUndo()" ng-disabled="canvasVersion < 1" >Undo</button>
+        </div>
+
+    </div>
+</section>

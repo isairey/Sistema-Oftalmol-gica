@@ -1,0 +1,24 @@
+<section data-ng-controller="ManageUsersController" data-ng-init="initView()">
+    <div class="page-header">
+        <h1 data-ng-bind="manageUser.fullName"></h1>
+    </div>
+
+    <p class="list-group-item-text">
+        <em class="text-muted">
+            <strong>Email: </strong>
+            {{manageUser.email}}
+        </em>
+    </p>
+    <p class="list-group-item-text">
+        <em class="text-muted">
+            <strong>Display Name: </strong>
+            {{manageUser.displayName}}
+        </em>
+    </p>
+    <p class="list-group-item-text">
+        <em class="text-muted">
+            <strong>Role: </strong>
+           {{manageUser._role.name}}
+        </em>
+    </p>
+</section>
